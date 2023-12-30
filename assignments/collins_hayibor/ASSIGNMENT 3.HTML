@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Personal Timetable</h2>
+
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+
+    <!-- 8:00 am to 5:00 pm with 1-hour time step -->
+    <!-- Each day is a column, and each row represents an hour -->
+
+    <!-- 8:00 am -->
+    <tr>
+      <td>8:00 am</td>
+      <td rowspan="2">WEB DEVELOPMENT</td>
+      <td>PROGRAMMING</td>
+      <td rowspan="2">Break</td>
+      <td>MARKETING</td>
+      <td>IT</td>
+      <td>BUSINESS FINANCE</td>
+      <td>LEGAL ENVIRONMENT</td>
+    </tr>
+
+    <!-- 9:00 am -->
+    <tr>
+      <td>9:00 am</td>
+      <td>LEGAL ENVIRONMENT</td>
+      <td>PROGRAMMING</td>
+      <td>MARKETING</td>
+      <td></td>
+      <td>BUSINESS FINANCE</td>
+    </tr>
+
+    <!-- Repeat similar rows for each hour -->
+
+    <!-- 12:00 pm (Lunch break) -->
+    <tr>
+      <td>12:00 pm</td>
+      <td colspan="7">Lunch Break</td>
+    </tr>
+
+    <!-- Continue adding rows for each hour -->
+
+    <!-- 5:00 pm -->
+    <tr>
+      <td>5:00 pm</td>
+      <td colspan="7">IT</td>
+    </tr>
+  </table>
+
+</body>
+</html>
